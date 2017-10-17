@@ -7,8 +7,33 @@
    GLOBAL STYLES
    ============================================== */
 
+@font-face {
 
+    font-family: avenir;
+    src: url('fonts/Avenir.ttc');
 
+}
+
+@font-face {
+    
+        font-family: adam;
+        src: url('fonts/Adam.otf');
+    
+    }
+
+ @font-face {
+        
+            font-family: gobold;
+            src: url('fonts/Gobold Regular.otf');
+        
+        }
+    
+
+body {
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 .logo {
     margin-top: 50px;
@@ -73,6 +98,22 @@ font-family: gobold;
     transition: .5s ease;
     backface-visibility: hidden;
   }
+.table { 
+
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-color: wheat;
+}
+
+.table th{ 
+    
+        background-color: gainsboro;
+        color: white;
+        text-align: center;
+     
+    }
+
   
   .middle {
     transition: .5s ease;
@@ -83,8 +124,9 @@ font-family: gobold;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%)
   }
+
   
-  .container:hover .image {
+  .container .image:hover {
     opacity: 0.3;
   }
   
