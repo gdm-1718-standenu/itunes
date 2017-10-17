@@ -2,7 +2,6 @@
    COLORS
    ============================================== */
 
-
 /* ==============================================
    GLOBAL STYLES
    ============================================== */
@@ -15,19 +14,18 @@
 }
 
 @font-face {
-    
-        font-family: adam;
-        src: url('fonts/Adam.otf');
-    
-    }
 
- @font-face {
-        
-            font-family: gobold;
-            src: url('fonts/Gobold Regular.otf');
-        
-        }
-    
+    font-family: adam;
+    src: url('fonts/Adam.otf');
+
+}
+
+@font-face {
+
+    font-family: gobold;
+    src: url('fonts/Gobold Regular.otf');
+
+}
 
 body {
 
@@ -47,14 +45,13 @@ p {
 }
 
 .intro2 {
-    margin: 10px 0 0 0; }
+    margin: 10px 0 0 0;
+}
 
 .intro1 {
     margin: 0;
 
 }
-    
-
 
 h2 {
 
@@ -64,7 +61,6 @@ h2 {
     font-family: gobold;
 
 }
-
 
 h4 {
 
@@ -83,12 +79,16 @@ img {
 
 a {
 
-margin-top: 20px;
-margin-bottom: 80px;
-font-family: gobold;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-family: gobold;
 
 }
 
+.image-wrapper {
+    width: 100%;
+    position: relative;
+}
 
 .image {
     opacity: 1;
@@ -97,8 +97,9 @@ font-family: gobold;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
-.table { 
+}
+
+.table {
 
     background-color: white;
     color: black;
@@ -106,77 +107,87 @@ font-family: gobold;
     border-color: wheat;
 }
 
-.table th{ 
-    
-        background-color: gainsboro;
-        color: white;
-        text-align: center;
-     
-    }
+.table th {
 
-  
-  .middle {
+    background-color: gainsboro;
+    color: white;
+    text-align: center;
+
+}
+
+.middle1 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.middle2 {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-  }
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+}
 
-  
-  .container .image:hover {
+.middle3 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container .image:hover {
     opacity: 0.3;
-  }
-  
-  .container:hover .middle {
-    opacity: 1;
-  }
-  
-  .text {
-    
+}
+
+.text {
+
     color: black;
     font-size: 20px;
     text-align: center;
-    
-   
-  }
 
-  .btn {
+}
+
+.btn {
 
     border-radius: 30px;
     background-color: black;
-    
-  }
 
+}
 
+/* MEDIA QUERIES
+*********************************************/
 
+/* Extra small devices (portrait phones, less than 576px)
+/ No media query since this is the default in Bootstrap*/
 
+/* Small devices (landscape phones, 576px and up)*/
 
-    /* MEDIA QUERIES
-    *********************************************/
-    
-    
-    /* Extra small devices (portrait phones, less than 576px)
-    / No media query since this is the default in Bootstrap*/
-    
-    
-    /* Small devices (landscape phones, 576px and up)*/
-    
-    @media (min-width: 576px) {}
-    
-    
-    /* Medium devices (tablets, 768px and up)*/
-    
-    @media (min-width: 768px) {}
-    
-    
-    /* Large devices (desktops, 992px and up)*/
-    
-    @media (min-width: 992px) {}
-    
-    
-    /* Extra large devices (large desktops, 1200px and up)*/
-    
-    @media (min-width: 1200px) {}
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+}
