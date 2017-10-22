@@ -103,17 +103,19 @@ a {
 
     background-color: white;
     color: black;
-    text-align: center;
-    border-color: wheat;
+    text-align: left;
+   
 }
 
 .table th {
 
-    background-color: gainsboro;
-    color: white;
-    text-align: center;
+    background-color: white;
+    color: black;
+    text-align: left;
+    border-color: black;
 
 }
+
 
 .middle1 {
     transition: .5s ease;
